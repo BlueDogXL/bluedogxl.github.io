@@ -1,0 +1,11 @@
+body{
+    background-color: royalblue;
+    font-family: 'Sofia', sans-serif;
+}
+
+.submitButton{
+    background-color:rgb(48, 48, 48);
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+}

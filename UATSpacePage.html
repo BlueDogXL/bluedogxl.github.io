@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<!--
+    This is a file to test the use of HTML tags as well as a couple JavaScript functions (document.write() and alert()).
+    created by Alex Caraway
+    01/12/22
+    for CSC102
+    alecaraw@uat.edu
+-->
+
+<head>
+    <!--This is the head of the document, it is behind the scenes-->
+    <script src="code.js"></script>
+    <script src="classCode.js"></script>
+    <script src="launchDataDis.js"></script>
+    <script src="dataLoader.js"></script>
+    <script>
+        var theTime = new Date();
+        var tempTime = new Date();
+        var lastIteration = 0;
+        var time_interval = 5000;
+        var running = true;
+        var index = 0;
+        var timer;
+        //gets data into array
+        var data = getData();
+    </script>
+    <title>
+        Alex Caraway's UATSpace Page
+    </title>
+    <style>
+        body {
+            background-image: linear-gradient(90deg, white, #2eacd4);
+            font-family: 'Sofia', sans-serif;
+        }
+        .SSButtons {
+            background-color: white;
+            width: 150px;
+            height: 30px;
+            border-radius: 12px;
+            border-color: #2eacd4;
+        }
+        .LgButton {
+            width: 200px;
+            height: 30px;
+            border-radius: 12px;
+            border-color: #2eacd4;
+        }
+        #data {
+            background-image: linear-gradient(180deg, white, #2eacd4);
+        }
+            
+    </style>
+</head>
+
+<body>
+    <table>
+        <td><img src="UATspaceLogo.jpg"></td>
+        <td><h1>UAT Space Program</h1></td>
+    </table>
+    <table id="data" border="2" width="70%">
+        <col style="width: 35%">
+        <col style="width: 35%">
+        <thead>
+            <th>Data type</th>
+            <th>Reading</th>
+        </thead>
+        <tbody>
+            <tr id="seconds"></tr>
+            <tr id="latitude"></tr>
+            <tr id="longitude"></tr>
+            <tr id="gpsSensor_alt"></tr>
+            <tr id="bmpSensor_alt"></tr>
+            <tr id="bmpSensor_pres"></tr>
+            <tr id="bmpSensor_temp"></tr>
+            <tr id="digSensor_temp"></tr>
+            <tr id="cssSensor_temp"></tr>
+            <tr id="cssSensor_eco2"></tr>
+            <tr id="cssSensor_TVOC"></tr>
+            <tr id="UV"></tr>
+            <tr id="accelX"></tr>
+            <tr id="accelY"></tr>
+            <tr id="accelZ"></tr>
+            <tr id="magneticX"></tr>
+            <tr id="magneticY"></tr>
+            <tr id="magneticZ"></tr>
+            <tr id="gyroX"></tr>
+            <tr id="gyroY"></tr>
+            <tr id="gyroZ"></tr>
+        </tbody>
+    </table>
+    <br>
+    The current time is: <div id="timeStamp">Press start for current time!</div>
+    <br>
+    <button id="startButton" onclick="start();" class="SSButtons">Start</button>
+    <button id="stopButton" onclick="stop();" class="SSButtons">Stop</button>
+    <br>
+    <script>
+        var docText = "this is the contents of my docText variable.";
+        var addText = " did you know 4 bits is a nybble?";
+        document.write(docText + addText)
+    </script>
+    <br>
+    <br>
+    <button onclick="playCraps();" class="SSButtons">Play Craps</button>
+    <div id="crapsRes">Craps Results</div>
+    <div id="die1Res">die 1 result</div>
+    <div id="die2Res">die 2 result</div>
+    <div id="sumRes">sum result</div>
+    <br>
+    <button class="SSButtons" onclick="playSound();">Play Sound</button>
+    <br>
+    <br>
+    <script>
+        var springLaunch = new Mission("To boldly go...", 19, 25, "May", 2023, "Maxwell One", 3);
+        var fallLaunch = new Mission("To go boldly, grammatically correct", 25, 13, "November", 2022, "Maxwell Zero", 2)
+    </script>
+    <button onclick="runSpringDisplay()" class="LgButton">Spring Mission Parameters</button>
+    <button onclick="spLaunch()" class="SSButtons">Start Spring Launch</button>
+    <br>
+    <button onclick="runFallDisplay()" class="LgButton">Fall Mission Parameters</button>
+    <button onclick="faLaunch()" class="SSButtons">Start Fall Launch</button>
+    <br>
+    <br>
+    &lt;
+        <a href="./index.html">Back to the Landing Page</a>
+        &gt;
+</body>
+<!--alt+shift+f to fix formatting-->
+
+</html>
