@@ -1,9 +1,64 @@
 body {
-    background-color: skyblue;
-    font-family: 'Sofia', sans-serif;
-    color: navy;
-    margin-top: 10px;
-  	margin-bottom: 10px;
-  	margin-right: 150px;
-  	margin-left: 150px;
+  background-color: deepskyblue;
+  font-family: 'Sofia', sans-serif;
+  color: navy;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+header {
+  text-align: center;
+  text-size-adjust: 24px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+.mainnav {
+  background-color: navy;
+  color: skyblue;
+  border-radius: 5px;
+  border-style: double;
+  text-align: center;
+}
+
+.section1 {
+  background-color: dodgerblue;
+  color: navy;
+  padding: 10px;
+  border-radius: 4px;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+.section2 {
+  background-color: dodgerblue;
+  color: navy;
+  padding: 10px;
+  border-radius: 4px;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+.section3 {
+  background-color: dodgerblue;
+  color: navy;
+  padding: 10px;
+  border-radius: 4px;
+  border-style: solid;
+  margin-top: 10px;
+}
+a:visited {
+color: darkmagenta;
+}
+a:hover {
+color: blue;
 }
