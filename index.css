@@ -15,7 +15,6 @@ body {
   margin-right: 50px;
   margin-left: 50px;
   }
-
 }
 header {
   text-align: center;
@@ -36,15 +35,15 @@ table, th, td {
 }
 
 .mainnav {
-  background-color: navy;
-  color: skyblue;
+  background-color: rgb(94, 174, 255);
+  color: navy;
   border-radius: 5px;
   border-style: double;
   text-align: center;
 }
 
 .section1 {
-  background-color: dodgerblue;
+  background-color: rgb(94, 174, 255);
   color: navy;
   padding: 10px;
   border-radius: 4px;
@@ -53,7 +52,7 @@ table, th, td {
 }
 
 .section2 {
-  background-color: dodgerblue;
+  background-color: rgb(94, 174, 255);
   color: navy;
   padding: 10px;
   border-radius: 4px;
@@ -62,15 +61,18 @@ table, th, td {
 }
 
 .section3 {
-  background-color: dodgerblue;
+  background-color: rgb(94, 174, 255);
   color: navy;
   padding: 10px;
   border-radius: 4px;
   border-style: solid;
   margin-top: 10px;
 }
+a {
+  color: navy;
+}
 a:visited {
-color: darkgoldenrod;
+color: purple;
 }
 a:hover {
 color: blue;
