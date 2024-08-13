@@ -1,0 +1,83 @@
+body {
+    background-color: navy;
+    font-family: 'Sofia', sans-serif;
+    color: deepskyblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+  td {
+    padding: 4px;
+  }
+  @media screen and (max-width: 800px) {
+    body {
+      font-size: 30px;
+      margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    }
+  }
+  header {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    display: inline;
+    padding: 10px;
+  }
+  
+  table, th, td {
+    border: 2px solid deepskyblue;
+  }
+  
+  .mainnav {
+    background-color: navy;
+    color: rgb(94, 174, 255);
+    border-radius: 5px;
+    border-style: double;
+    text-align: center;
+  }
+  
+  .section1 {
+    background-color: navy;
+    color: rgb(94, 174, 255);
+    padding: 10px;
+    border-radius: 4px;
+    border-style: solid;
+    margin-top: 10px;
+  }
+  
+  .section2 {
+    background-color: navy;
+    color: rgb(94, 174, 255);
+    padding: 10px;
+    border-radius: 4px;
+    border-style: solid;
+    margin-top: 10px;
+  }
+  
+  .section3 {
+    background-color: navy;
+    color: rgb(94, 174, 255);
+    padding: 10px;
+    border-radius: 4px;
+    border-style: solid;
+    margin-top: 10px;
+  }
+  a {
+    color: deepskyblue;
+  }
+  a:visited {
+  color: plum;
+  }
+  a:hover {
+  color: blue;
+  }
+  
