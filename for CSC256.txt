@@ -1,0 +1,1 @@
+the only new files for the class are crossword.html/.js/.css and extras.html/.css.
