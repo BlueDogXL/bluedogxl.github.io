@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bluedogxl - crossword</title>
+    <script src="crossword.js"></script>
+    <link href="crossword.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Crossword</h1>
+    </header>
+    <main>
+        <table id="crossword"></table>
+        <br>
+        <h2>Clues</h2>
+        <h3>Across:</h3>
+        <ol>
+            <li>
+                My major.
+            </li>
+            <li>
+                The first magical girl anime I watched.
+            </li>
+            <li>
+                One of my favorite <em>Pretty Cure</em> characters.
+            </li>
+        </ol>
+        <br>
+        <h3>Down</h3>
+        <ol>
+            <li>
+                A mobile game I loved but is sadly no longer available.
+            </li>
+            <li>
+                The oldest webcomic I've read.
+            </li>
+        </ol>
+        <br>
+        Remember, there's no spaces in these answers!
+        <br><br>
+        <button onclick="revealAnswer();">Reveal Answer</button>
+    </main>
+    <script>
+        buildTable(document.getElementById("crossword"));
+        // remember to update revealAnswers with these functions as well!
+        buildClues(0, "down", 3, 12, document.getElementById("crossword"), false);
+        buildClues(1, "across", 6, 7, document.getElementById("crossword"), false);
+        buildClues(2, "down", 0, 9, document.getElementById("crossword"), false);
+        buildClues(3, "across", 11, 9, document.getElementById("crossword"), false);
+        buildClues(4, "across", 4, 0, document.getElementById("crossword"), false);
+    </script>
+</body>
+</html>
