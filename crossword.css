@@ -1,3 +1,4 @@
+/* this file was made for CSC256 */
 body {
     background-color: navy;
     font-family: 'Sofia', sans-serif;
@@ -42,3 +43,16 @@ input {
 .letter {
     background-color: rgb(74, 79, 70);
 }
+.mainnav {
+    background-color: rgb(31,31,170);
+    color: rgb(94, 174, 255);
+    border-radius: 5px;
+    border-style: double;
+    text-align: center;
+  }
+  a:visited {
+    color: plum;
+    }
+    a:hover {
+    color: blue;
+    }  

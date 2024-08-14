@@ -1,15 +1,17 @@
+// this file was made for CSC256
+
 var wordArray = ["kidradd", "sailormoon", "dragalialost", "takumi", "gameprogramming"]
 
 function buildTable(table)
 {
     var table = document.getElementById("crossword");
     // make the rows
-    for (var i = 0; i < 18; i++)
+    for (var i = 0; i < 12; i++)
     {
         // make a new row
         var row = document.createElement("tr");
         // make the columns
-        for (var j = 0; j < 18; j++)
+        for (var j = 0; j < 17; j++)
         {
             // make a new column
             var column = document.createElement("td");
